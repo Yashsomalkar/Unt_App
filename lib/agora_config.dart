@@ -1,8 +1,9 @@
-const appId = 'App ID ';
+const appId = 'App ID';
+
 
 const token =
     "token here";
-
+const token1= "token here";
 /// Your channel ID
 const channelId = "test";
 

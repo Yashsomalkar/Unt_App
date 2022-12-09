@@ -1,5 +1,7 @@
 import 'package:agora_rtc_engine/rtc_engine.dart';
 import 'package:agora_voice_call/agora_config.dart';
+import 'package:agora_voice_call/screens/voiceCall/components/body1.dart';
+import 'package:agora_voice_call/screens/voiceCall/components/dailscreen2.dart';
 import 'package:agora_voice_call/screens/voiceCall/dial_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -50,6 +52,13 @@ class _MyHomePageState extends State<MyHomePage> {
                       MaterialPageRoute(builder: (builder) => DialScreen()));
                 },
               ),
+              ElevatedButton(
+                child: const Text('Voice Call 2'),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (builder) => DialScreen2()));
+                },
+              )
             ],
           ),
         ),
